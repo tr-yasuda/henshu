@@ -12,7 +12,7 @@ export const HeroHeader = () => {
           src='https://via.placeholder.com/1920x1080'
           alt='Henshu background'
         />
-        <div className='absolute inset-0 bg-gray-800 opacity-50' />
+        <div className='absolute inset-0 bg-gray-700 opacity-50' />
       </div>
       <div className='relative max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8'>
         <div className='text-center'>
@@ -30,10 +30,10 @@ export const HeroHeader = () => {
             )}
           </p>
           <div className='mt-10 sm:flex sm:justify-center space-x-4'>
-            <Link href='/'>
+            <Link to='/'>
               <Button size={'xl'}>{t('Get Started')}</Button>
             </Link>
-            <Link href='/'>
+            <Link to='/about'>
               <Button size={'xl'} color={'info'}>
                 {t('Learn More')}
               </Button>
