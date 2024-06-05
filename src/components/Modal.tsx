@@ -1,7 +1,6 @@
 import { IconX } from '@tabler/icons-react'
 import type { KeyboardEvent, MouseEvent, ReactNode } from 'react'
 import { ActionIcon } from './ActionIcon.tsx'
-import { Typography } from './Typography.tsx'
 
 type ModalProps = {
   children: ReactNode
@@ -45,7 +44,7 @@ export const Modal = ({ children, open, title, onClose }: ModalProps) => {
         className='bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full'
       >
         <div className={'flex justify-between py-2 px-2'}>
-          <Typography variant={'h5'}>{title}</Typography>
+          <div className={'text-xl'}>{title}</div>
           <ActionIcon
             icon={<IconX color={'gray'} />}
             variant={'white'}
