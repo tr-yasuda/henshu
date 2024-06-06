@@ -6,27 +6,55 @@ export const en: { translation: Record<string, string> } = {
       'Edit your videos with our intuitive and powerful tools. No experience required.',
     'Get Started': 'Get Started',
     'Learn More': 'Learn More',
-    'Perfect for all': 'Perfect for all',
-    'for individuals': 'for individuals',
-    'You can edit all kinds of videos.': 'You can edit all kinds of videos.',
+    'Plans for Everyone': 'Plans for Everyone',
+    "Choose the plan that's right for you":
+      "Choose the plan that's right for you",
     'Henshu (Free)': 'Henshu (Free)',
-    'Try Henshu (Free) for free': 'Try Henshu (Free) for free',
+    'Edit a variety of video types with our free plan.':
+      'Edit a variety of video types with our free plan.',
+    'Basic editing tools': 'Basic editing tools',
+    'Watermarked exports': 'Watermarked exports',
+    'Community support': 'Community support',
+    'Try for free': 'Try for free',
     'Henshu Pro': 'Henshu Pro',
-    'Special features can be used to support the growth of various projects.':
-      'Special features can be used to support the growth of various projects.',
-    'Try Henshu Pro for free': 'Try Henshu Pro for free',
+    'Use advanced tools to support growth on various projects.':
+      'Use advanced tools to support growth on various projects.',
+    'Advanced editing tools': 'Advanced editing tools',
+    'No watermarks': 'No watermarks',
+    'Priority support': 'Priority support',
+    'Try Pro for free': 'Try Pro for free',
     'Henshu Team': 'Henshu Team',
-    'for teams': 'for teams',
-    'Teams can collaborate using special work-place tools and workflows.':
-      'Teams can collaborate using special work-place tools and workflows.',
-    'Try Henshu Team for free': 'Try Henshu Team for free',
+    'Use special workflow tools and collaboration features for teams.':
+      'Use special workflow tools and collaboration features for teams.',
+    'Team collaboration': 'Team collaboration',
+    'Shared projects': 'Shared projects',
+    'Team support': 'Team support',
+    'Try Team for free': 'Try Team for free',
     'Henshu Enterprise': 'Henshu Enterprise',
-    'for organizations': 'for organizations',
-    'It allows organizations to unify their teams and manage their brand and design.':
-      'It allows organizations to unify their teams and manage their brand and design.',
+    'Manage large teams and brand design with our enterprise plan.':
+      'Manage large teams and brand design with our enterprise plan.',
+    'Custom solutions': 'Custom solutions',
+    'Dedicated support': 'Dedicated support',
+    'Enhanced security': 'Enhanced security',
     'Contact us': 'Contact us',
     Login: 'Login',
     Logout: 'Logout',
     Register: 'Register',
+    'Features and Functions': 'Features and Functions',
+    'Key Features of Our App': 'Key Features of Our App',
+    'Providing a user-friendly and multi-functional video editing tool.':
+      'Providing a user-friendly and multi-functional video editing tool.',
+    'Easy Cut and Trim': 'Easy Cut and Trim',
+    'Quickly cut and trim unwanted parts of your videos with our intuitive interface.':
+      'Quickly cut and trim unwanted parts of your videos with our intuitive interface.',
+    'Add Effects': 'Add Effects',
+    'Choose from a wide library of effects to enhance your videos and make them stand out.':
+      'Choose from a wide library of effects to enhance your videos and make them stand out.',
+    'Insert Music': 'Insert Music',
+    'Easily add music to your videos. Select from our library or upload your own tracks.':
+      'Easily add music to your videos. Select from our library or upload your own tracks.',
+    'High-Quality Export': 'High-Quality Export',
+    'Export your edited videos in high quality with support for various resolutions and formats.':
+      'Export your edited videos in high quality with support for various resolutions and formats.',
   },
 }

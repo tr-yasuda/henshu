@@ -5,7 +5,14 @@ type ButtonProps = {
   children: ReactNode
   variant?: 'filled' | 'outlined' | 'text'
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-  color?: 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'error'
+  color?:
+    | 'primary'
+    | 'secondary'
+    | 'info'
+    | 'success'
+    | 'warning'
+    | 'error'
+    | 'gray'
   type?: 'button' | 'submit' | 'reset'
   fullWidth?: boolean
   className?: string
@@ -41,6 +48,8 @@ export const Button = ({
             color === 'warning',
           'bg-error text-white hover:bg-error-dark focus:ring-error':
             color === 'error',
+          'bg-gray-500 text-white hover:bg-gray-600 focus:ring-gray-500':
+            color === 'gray',
         },
         variant === 'outlined' && {
           'border border-primary text-primary hover:bg-primary-light focus:ring-primary':
@@ -55,6 +64,8 @@ export const Button = ({
             color === 'warning',
           'border border-error text-error hover:bg-error-light focus:ring-error':
             color === 'error',
+          'border border-gray-500 text-gray-500 hover:bg-gray-200 focus:ring-gray-500':
+            color === 'gray',
         },
         variant === 'text' && {
           'text-primary hover:text-primary-dark focus:ring-primary':
@@ -68,6 +79,8 @@ export const Button = ({
             color === 'warning',
           'text-error hover:text-error-dark focus:ring-error':
             color === 'error',
+          'text-gray-500 hover:text-gray-600 focus:ring-gray-500':
+            color === 'gray',
         },
         {
           'px-2 py-1 text-xs': size === 'xs',
