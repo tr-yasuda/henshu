@@ -8,11 +8,14 @@ export const Header = () => {
   const { t } = useTranslation()
 
   return (
-    <header className='fixed top-0 w-full bg-gray-100 bg-opacity-50 text-primary p-4 z-50'>
+    <header className='fixed top-0 w-full bg-gray-200 bg-opacity-50 text-primary p-4 z-50'>
       <nav className='flex justify-between items-center'>
         <ul>
           <li>
-            <Link to='/' className='hover:text-gray-300 text-xl font-semibold'>
+            <Link
+              to='/'
+              className='hover:text-primary-dark text-xl font-semibold'
+            >
               Henshu
             </Link>
           </li>
@@ -22,14 +25,12 @@ export const Header = () => {
             <>
               <li>
                 <Link to='/'>
-                  <Button size={'sm'} variant={'outlined'}>
-                    {t('Login')}
-                  </Button>
+                  <Button size={'sm'}>{t('Login')}</Button>
                 </Link>
               </li>
               <li>
                 <Link to='/'>
-                  <Button size={'sm'} color={'secondary'} variant={'outlined'}>
+                  <Button size={'sm'} color={'secondary'}>
                     {t('Register')}
                   </Button>
                 </Link>
@@ -38,9 +39,7 @@ export const Header = () => {
           ) : (
             <li>
               <Link to='/' className='hover:text-gray-300'>
-                <Button size={'sm'} variant={'outlined'}>
-                  {t('Logout')}
-                </Button>
+                <Button size={'sm'}>{t('Logout')}</Button>
               </Link>
             </li>
           )}
