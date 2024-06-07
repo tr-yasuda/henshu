@@ -12,5 +12,5 @@ export default defineConfig({
       plugins: [tailwindcss()],
     },
   },
-  // base: '/henshu/',
+  base: '/henshu/',
 })
