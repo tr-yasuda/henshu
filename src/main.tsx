@@ -6,7 +6,7 @@ import { routeTree } from './routeTree.gen'
 
 import './i18n'
 
-const router = createRouter({ routeTree })
+const router = createRouter({ routeTree, basepath: '/henshu/' })
 
 declare module '@tanstack/react-router' {
   interface Register {
