@@ -4,3 +4,15 @@ nocheck
 yasuda
 tabler
 languagedetector
+tanaka
+Tanaka
+Takahashi
+takahashi
+Sato
+sato
+Hanako
+hanako
+Ichiro
+ichiro
+Taro
+taro
