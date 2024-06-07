@@ -34,7 +34,7 @@ export const Button = ({
   return (
     <button
       className={clsx(
-        'transition ease-in-out duration-150 transform rounded-md focus:outline-none focus:ring focus:ring-opacity-50 cursor-pointer',
+        'flex items-center justify-center transition ease-in-out duration-150 transform rounded-md focus:outline-none focus:ring focus:ring-opacity-50 cursor-pointer',
         variant === 'filled' && {
           'bg-primary text-white hover:bg-primary-dark focus:ring-primary':
             color === 'primary',

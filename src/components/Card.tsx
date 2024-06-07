@@ -19,7 +19,7 @@ export const Card = ({ children, color = 'primary', className }: CardProps) => {
   return (
     <div
       className={clsx(
-        'p-6 rounded-lg shadow-lg overflow-hidden border-t-4',
+        'p-8 rounded-lg shadow-lg overflow-hidden border-t-4',
         {
           'bg-primary-lighter': color === 'primary',
           'bg-secondary-lighter': color === 'secondary',
