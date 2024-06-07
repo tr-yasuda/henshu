@@ -77,6 +77,7 @@ export const en: { translation: Record<string, string> } = {
     Careers: 'Careers',
     Press: 'Press',
     'Help Center': 'Help Center',
+    'Contact Us': 'Contact Us',
     'Privacy Policy': 'Privacy Policy',
     Email: 'Email',
     'All rights reserved.': 'All rights reserved.',
