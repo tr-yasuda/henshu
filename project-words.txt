@@ -3,3 +3,4 @@ biomejs
 nocheck
 yasuda
 tabler
+languagedetector
