@@ -2,6 +2,9 @@ henshu
 biomejs
 nocheck
 yasuda
+Yasuda
+yoshitada
+Yoshitada
 tabler
 languagedetector
 tanaka
