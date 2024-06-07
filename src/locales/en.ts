@@ -56,5 +56,29 @@ export const en: { translation: Record<string, string> } = {
     'High-Quality Export': 'High-Quality Export',
     'Export your edited videos in high quality with support for various resolutions and formats.':
       'Export your edited videos in high quality with support for various resolutions and formats.',
+    'User Testimonials': 'User Testimonials',
+    'The project went smoothly thanks to this app. Very easy to use.':
+      'The project went smoothly thanks to this app. Very easy to use.',
+    'Taro Takahashi': 'Taro Takahashi',
+    Designer: 'Designer',
+    'It has an excellent set of editing features and can handle any project. Support is also excellent.':
+      'It has an excellent set of editing features and can handle any project. Support is also excellent.',
+    'Hanako Sato': 'Hanako Sato',
+    'Video Producer': 'Video Producer',
+    'I never thought it would be so easy to work together as a team. Highly recommended.':
+      'I never thought it would be so easy to work together as a team. Highly recommended.',
+    'Ichiro Tanaka': 'Ichiro Tanaka',
+    'Project Manager': 'Project Manager',
+    Company: 'Company',
+    Support: 'Support',
+    'Follow Us': 'Follow Us',
+    Contact: 'Contact',
+    'About Us': 'About Us',
+    Careers: 'Careers',
+    Press: 'Press',
+    'Help Center': 'Help Center',
+    'Privacy Policy': 'Privacy Policy',
+    Email: 'Email',
+    'All rights reserved.': 'All rights reserved.',
   },
 }

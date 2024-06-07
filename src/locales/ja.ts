@@ -55,5 +55,29 @@ export const ja: { translation: Record<string, string> } = {
     'High-Quality Export': '高品質エクスポート',
     'Export your edited videos in high quality with support for various resolutions and formats.':
       '色んな解像度とフォーマットで、編集した動画を高品質でエクスポートしよう。',
+    'User Testimonials': 'ユーザーの声',
+    'The project went smoothly thanks to this app. Very easy to use.':
+      'このアプリのおかげでプロジェクトがスムーズに進みました。非常に使いやすいです。',
+    'Taro Takahashi': '高橋 太郎',
+    Designer: 'デザイナー',
+    'It has an excellent set of editing features and can handle any project. Support is also excellent.':
+      '優れた編集機能を備えており、どんなプロジェクトにも対応できます。サポートも優れています。',
+    'Hanako Sato': '佐藤 花子',
+    'Video Producer': 'ビデオプロデューサー',
+    'I never thought it would be so easy to work together as a team. Highly recommended.':
+      'チームでの協力がこれほど簡単にできるとは思いませんでした。お勧めです。',
+    'Ichiro Tanaka': '田中 一郎',
+    'Project Manager': 'プロジェクトマネージャー',
+    Company: '会社情報',
+    Support: 'サポート',
+    'Follow Us': 'フォロー',
+    Contact: 'お問い合わせ',
+    'About Us': '私たちについて',
+    Careers: 'キャリア',
+    Press: 'プレス',
+    'Help Center': 'ヘルプセンター',
+    'Contact Us': 'お問い合わせ先',
+    'Privacy Policy': 'プライバシーポリシー',
+    'All rights reserved.': 'All rights reserved.',
   },
 }
