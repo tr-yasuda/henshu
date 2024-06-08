@@ -26,6 +26,11 @@ const socialLinks = [
   { href: '#', text: 'Facebook', Icon: IconBrandFacebook },
   { href: '#', text: 'X', Icon: IconBrandX },
   { href: '#', text: 'Instagram', Icon: IconBrandInstagram },
+  {
+    href: 'https://github.com/tr-yasuda/henshu',
+    text: 'GitHub',
+    Icon: IconBrandGithub,
+  },
 ]
 
 type FooterLinkProps = {
@@ -86,12 +91,12 @@ export const Footer = () => {
             <ul className='flex space-x-4'>
               {socialLinks.map((link) => (
                 <li key={link.text}>
-                  <Link
+                  <a
                     href={link.href}
                     className='text-gray-400 hover:text-white flex items-center space-x-2'
                   >
                     <link.Icon size={20} />
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -110,10 +115,12 @@ export const Footer = () => {
         </div>
         <div className='mt-8 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between items-center'>
           <div className='space-x-2 flex items-center'>
+            <img
+              src='./logo.webp'
+              alt='Henshu logo'
+              className='h-8 w-auto mr-1'
+            />
             <p className='font-semibold'>Henshu</p>
-            <a href='https://github.com/tr-yasuda/henshu'>
-              <IconBrandGithub size={20} />
-            </a>
           </div>
           <Select
             autoWidth
