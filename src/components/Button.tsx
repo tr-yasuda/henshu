@@ -34,7 +34,7 @@ export const Button = ({
   return (
     <button
       className={clsx(
-        'flex items-center justify-center transition ease-in-out duration-150 transform rounded-md focus:outline-none focus:ring focus:ring-opacity-50 cursor-pointer',
+        'flex items-center justify-center transition ease-in-out duration-150 transform rounded-md focus:outline-none focus:ring focus:ring-opacity-50',
         variant === 'filled' && {
           'bg-primary text-white hover:bg-primary-dark focus:ring-primary':
             color === 'primary',
@@ -89,7 +89,9 @@ export const Button = ({
           'px-5 py-3 text-lg': size === 'lg',
           'px-6 py-4 text-xl': size === 'xl',
         },
-        disabled ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-200',
+        disabled
+          ? 'opacity-50 cursor-not-allowed'
+          : 'hover:bg-gray-200 cursor-pointer',
         fullWidth && 'w-full',
         className,
       )}
