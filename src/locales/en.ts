@@ -69,6 +69,11 @@ export const en: { translation: Record<string, string> } = {
       'I never thought it would be so easy to work together as a team. Highly recommended.',
     'Ichiro Tanaka': 'Ichiro Tanaka',
     'Project Manager': 'Project Manager',
+    'Join Us Today': 'Join Us Today',
+    'Experience the best video editing tool. Sign up now or log in to get started.':
+      'Experience the best video editing tool. Sign up now or log in to get started.',
+    'Log In': 'Log In',
+    'Sign Up': 'Sign Up',
     Company: 'Company',
     Support: 'Support',
     'Follow Us': 'Follow Us',
@@ -81,5 +86,10 @@ export const en: { translation: Record<string, string> } = {
     'Privacy Policy': 'Privacy Policy',
     Email: 'Email',
     'All rights reserved.': 'All rights reserved.',
+    Password: 'Password',
+    'Welcome back! Please login to your account.':
+      'Welcome back! Please login to your account.',
+    'Forgot Password?': 'Forgot Password?',
+    "Don't have an account?": "Don't have an account?",
   },
 }

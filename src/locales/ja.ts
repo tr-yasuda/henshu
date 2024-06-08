@@ -68,6 +68,11 @@ export const ja: { translation: Record<string, string> } = {
       'チームでの協力がこれほど簡単にできるとは思いませんでした。お勧めです。',
     'Ichiro Tanaka': '田中 一郎',
     'Project Manager': 'プロジェクトマネージャー',
+    'Join Us Today': '今すぐ登録',
+    'Experience the best video editing tool. Sign up now or log in to get started.':
+      '最高の動画編集ツールを体験しよう。今すぐ登録するか、ログインして始めよう。',
+    'Log In': 'ログイン',
+    'Sign Up': '登録',
     Company: '会社情報',
     Support: 'サポート',
     'Follow Us': 'フォロー',
@@ -78,6 +83,12 @@ export const ja: { translation: Record<string, string> } = {
     'Help Center': 'ヘルプセンター',
     'Contact Us': 'お問い合わせ先',
     'Privacy Policy': 'プライバシーポリシー',
+    Email: 'メールアドレス',
     'All rights reserved.': 'All rights reserved.',
+    Password: 'パスワード',
+    'Welcome back! Please login to your account.':
+      'おかえりなさい！ログインしてください。',
+    'Forgot Password?': 'パスワードをお忘れですか？',
+    "Don't have an account?": 'アカウントをお持ちでないですか？',
   },
 }
