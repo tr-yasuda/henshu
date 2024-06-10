@@ -1,10 +1,12 @@
 import clsx from 'clsx'
 import type { ChangeEvent } from 'react'
+import { useTranslation } from 'react-i18next'
 
 type InputProps = {
   id?: string
-  type: string
+  type?: string
   value: string
+  color?: 'primary' | 'secondary' | 'success' | 'error' | 'warning' | 'info'
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void
   required?: boolean
   className?: string
@@ -13,22 +15,35 @@ type InputProps = {
 
 export const Input = ({
   className,
+  type = 'text',
+  color = 'primary',
   required = false,
-  errorMessage,
+  errorMessage = '',
   ...rest
 }: InputProps) => {
+  const { t } = useTranslation()
   return (
     <>
       <input
         {...rest}
+        type={type}
         className={clsx(
-          'w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-primary focus:border-primary',
+          'w-full px-3 py-2 my-1 border border-gray-300 rounded-lg focus:outline-none focus:ring',
+          {
+            'focus:ring-primary focus:border-primary': color === 'primary',
+            'focus:ring-secondary focus:border-secondary':
+              color === 'secondary',
+            'focus:ring-success focus:border-success': color === 'success',
+            'focus:ring-error focus:border-error': color === 'error',
+            'focus:ring-warning focus:border-warning': color === 'warning',
+            'focus:ring-info focus:border-info': color === 'info',
+          },
           className,
         )}
         required
       />
       {errorMessage && (
-        <span className={'text-xs text-error'}>{errorMessage}</span>
+        <span className={'text-xs text-error'}>{t(errorMessage)}</span>
       )}
     </>
   )
