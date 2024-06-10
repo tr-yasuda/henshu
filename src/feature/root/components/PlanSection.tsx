@@ -17,7 +17,7 @@ const plans: {
     | 'gray'
   borderColor: string
   description: string
-  href: string
+  to: string
   title: string
 }[] = [
   {
@@ -31,7 +31,7 @@ const plans: {
     ],
     color: 'gray',
     borderColor: 'border-gray-500',
-    href: '/',
+    to: '/register',
   },
   {
     title: 'Henshu Pro',
@@ -40,7 +40,7 @@ const plans: {
     features: ['Advanced editing tools', 'No watermarks', 'Priority support'],
     color: 'primary',
     borderColor: 'border-primary',
-    href: '/',
+    to: '/register',
   },
   {
     title: 'Henshu Team',
@@ -50,7 +50,7 @@ const plans: {
     features: ['Team collaboration', 'Shared projects', 'Team support'],
     color: 'secondary',
     borderColor: 'border-secondary',
-    href: '/',
+    to: '/register',
   },
   {
     title: 'Henshu Enterprise',
@@ -60,7 +60,7 @@ const plans: {
     features: ['Custom solutions', 'Dedicated support', 'Enhanced security'],
     color: 'info',
     borderColor: 'border-info',
-    href: '/',
+    to: '/contact-sales',
   },
 ]
 
@@ -83,6 +83,7 @@ export const PlanSection = () => {
             <Card
               key={plan.title}
               color={'white'}
+              border
               className={clsx('relative flex flex-col', plan.borderColor)}
             >
               <h3 className='text-xl font-semibold text-gray-900'>
@@ -113,7 +114,7 @@ export const PlanSection = () => {
                   </li>
                 ))}
               </ul>
-              <Link to={plan.href}>
+              <Link to={plan.to}>
                 <Button className={clsx('mt-8')} fullWidth color={plan.color}>
                   {t(plan.buttonText)}
                 </Button>

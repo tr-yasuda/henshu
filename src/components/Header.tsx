@@ -20,7 +20,7 @@ export const Header = () => {
           <Link to='/login'>
             <Button color={'primary'}>{t('Log In')}</Button>
           </Link>
-          <Link to='/'>
+          <Link to='/register'>
             <Button color={'secondary'}>{t('Sign Up')}</Button>
           </Link>
         </nav>

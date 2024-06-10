@@ -8,15 +8,18 @@ import { Card } from '../../../components/Card.tsx'
 import { Input } from '../../../components/Input.tsx'
 import BackgroundImage from '../images/background.webp'
 
-export const LoginForm = () => {
+export const RegisterForm = () => {
   const { t } = useTranslation()
+
   const form = useForm({
     defaultValues: {
+      username: '',
       email: '',
       password: '',
     },
     validators: {
       onMount: z.object({
+        username: z.string().min(2, 'Please enter your username.'),
         email: z.string().email('Please enter your email address.'),
         password: z
           .string()
@@ -25,103 +28,106 @@ export const LoginForm = () => {
     },
     validatorAdapter: zodValidator,
     onSubmit: async ({ value }) => {
-      // TODO: handle login
+      // 新規会員登録処理をここに追加
       console.log(value)
     },
   })
 
   const formFields: {
-    name: 'email' | 'password'
+    name: 'username' | 'email' | 'password'
     label: string
-    inputType: string
+    type: string
     validator: z.ZodType
   }[] = [
     {
+      name: 'username',
+      label: 'Username',
+      type: 'text',
+      validator: z.string().min(2, 'Please enter your username.'),
+    },
+    {
       name: 'email',
       label: 'Email',
-      inputType: 'email',
+      type: 'email',
       validator: z.string().email('Please enter your email address.'),
     },
     {
       name: 'password',
       label: 'Password',
-      inputType: 'password',
+      type: 'password',
       validator: z.string().min(12, 'Password must be at least 12 characters.'),
     },
   ]
 
+  console.log(form)
+
   return (
-    <div className='min-h-screen flex items-center justify-center bg-gray-100 relative'>
-      <div
-        className='absolute inset-0 bg-cover bg-center'
-        style={{ backgroundImage: `url(${BackgroundImage})` }}
-      />
+    <div
+      className='min-h-screen flex items-center justify-center bg-cover bg-center'
+      style={{ backgroundImage: `url(${BackgroundImage})` }}
+    >
       <Card fullWidth color={'white'} className='max-w-md z-10'>
         <div className='flex justify-center mb-6'>
           <img src={'./logo.webp'} alt='Henshu logo' className='h-12 w-auto' />
         </div>
-        <h2 className='text-2xl font-bold text-center mb-2'>{t('Log In')}</h2>
+        <h2 className='text-2xl font-bold text-center mb-2'>{t('Sign Up')}</h2>
         <p className='text-center text-gray-600 mb-6'>
-          {t('Welcome back! Please login to your account.')}
+          {t('Create your account by filling out the information below.')}
         </p>
         <form
-          onSubmit={(e) => {
+          onSubmit={async (e) => {
             e.preventDefault()
             e.stopPropagation()
-            form.handleSubmit()
+            await form.handleSubmit()
           }}
         >
           {formFields.map((formField) => (
-            <div className='mb-4' key={formField.name}>
-              <form.Field
-                name={formField.name}
-                validators={{
-                  onChange: formField.validator,
-                }}
-              >
-                {(field) => (
-                  <>
-                    <label
-                      htmlFor={formField.name}
-                      className='block text-gray-700'
-                    >
-                      {t(formField.label)}
-                    </label>
-                    <Input
-                      id={formField.name}
-                      type={formField.inputType}
-                      value={field.state.value}
-                      onChange={(e) => field.handleChange(e.target.value)}
-                      errorMessage={field.state.meta.errors.toString()}
-                      required
-                    />
-                  </>
-                )}
-              </form.Field>
-            </div>
+            <form.Field
+              key={formField.name}
+              name={formField.name}
+              validators={{
+                onChange: formField.validator,
+              }}
+            >
+              {(field) => (
+                <div className='mb-4'>
+                  <label
+                    htmlFor={formField.name}
+                    className='block text-gray-700'
+                  >
+                    {t(formField.label)}
+                  </label>
+                  <Input
+                    type={formField.type}
+                    id={formField.name}
+                    value={field.state.value}
+                    onChange={(e) => field.handleChange(e.target.value)}
+                    required
+                    errorMessage={field.state.meta.errors.toString()}
+                  />
+                </div>
+              )}
+            </form.Field>
           ))}
-          <Button size={'xs'} variant={'text'} className='mb-4'>
-            <div className='hover:underline'>{t('Forgot Password?')}</div>
-          </Button>
           <form.Subscribe
             selector={(state) => [state.canSubmit, state.isDirty]}
           >
             {([canSubmit, isDirty]) => (
               <Button type='submit' fullWidth disabled={!canSubmit || !isDirty}>
-                {t('Log In')}
+                {t('Sign Up')}
               </Button>
             )}
           </form.Subscribe>
         </form>
         <div className='mt-6 text-center'>
-          <p className='text-gray-600'>
-            {t("Don't have an account?")}{' '}
-            <Link to='/register' className={'inline-block'}>
-              <Button variant={'text'} className={'hover:underline'}>
-                {t('Sign Up')}
-              </Button>
-            </Link>
+          <p className='text-gray-600 inline-block mr-2'>
+            {t('Already have an account?')}
           </p>
+          <Link to='/login' className={'inline-block'}>
+            <Button variant={'text'} className={'hover:underline'}>
+              {t('Log In')}
+            </Button>
+          </Link>
         </div>
       </Card>
     </div>

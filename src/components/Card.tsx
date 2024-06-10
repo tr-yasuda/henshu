@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 
 type CardProps = {
   children: ReactNode
+  border?: boolean
   color?:
     | 'primary'
     | 'secondary'
@@ -12,14 +13,21 @@ type CardProps = {
     | 'error'
     | 'gray'
     | 'white'
+  fullWidth?: boolean
   className?: string
 }
 
-export const Card = ({ children, color = 'primary', className }: CardProps) => {
+export const Card = ({
+  children,
+  color = 'primary',
+  border,
+  fullWidth,
+  className,
+}: CardProps) => {
   return (
     <div
       className={clsx(
-        'p-8 rounded-lg shadow-lg overflow-hidden border-t-4',
+        'p-8 rounded-lg shadow-lg overflow-hidden',
         {
           'bg-primary-lighter': color === 'primary',
           'bg-secondary-lighter': color === 'secondary',
@@ -30,6 +38,8 @@ export const Card = ({ children, color = 'primary', className }: CardProps) => {
           'bg-gray-200': color === 'gray',
           'bg-white': color === 'white',
         },
+        border && 'border-t-4',
+        fullWidth && 'w-full',
         className,
       )}
     >
