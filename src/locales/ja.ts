@@ -90,5 +90,27 @@ export const ja: { translation: Record<string, string> } = {
       'おかえりなさい！ログインしてください。',
     'Forgot Password?': 'パスワードをお忘れですか？',
     "Don't have an account?": 'アカウントをお持ちでないですか？',
+    'Please enter your email address.': 'メールアドレスを入力してください。',
+    'Password must be at least 12 characters.':
+      'パスワードは 12 文字以上である必要があります。',
+    'Create your account by filling out the information below.':
+      '以下の情報を入力してアカウントを作成してください。',
+    Username: 'ユーザー名',
+    'Please enter your username.': 'ユーザー名を入力してください。',
+    'Already have an account?': 'すでにアカウントをお持ちですか？',
+    'Page Not Found': 'ページが見つかりません',
+    'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.':
+      'お探しのページは削除された可能性があります、名前が変更された可能性があります、または一時的に利用できない状態になっている可能性があります。',
+    'Go to Home': 'ホームに戻る',
+    'Contact Sales': '営業に連絡',
+    'Please fill out the form below to contact our sales team.':
+      '営業チームに連絡するには、以下のフォームに記入してください。',
+    Name: 'お名前',
+    'Company Name': '会社名',
+    Message: 'ご用件',
+    Submit: '送信',
+    'Please enter your name.': 'お名前を入力してください。',
+    'Please enter your company.': '会社名を入力してください。',
+    'Please enter a message.': 'ご用件を入力してください。',
   },
 }

@@ -91,5 +91,27 @@ export const en: { translation: Record<string, string> } = {
       'Welcome back! Please login to your account.',
     'Forgot Password?': 'Forgot Password?',
     "Don't have an account?": "Don't have an account?",
+    'Please enter your email address.': 'Please enter your email address.',
+    'Password must be at least 12 characters.':
+      'Password must be at least 12 characters.',
+    'Create your account by filling out the information below.':
+      'Create your account by filling out the information below.',
+    Username: 'Username',
+    'Please enter your username.': 'Please enter your username.',
+    'Already have an account?': 'Already have an account?',
+    'Page Not Found': 'Page Not Found',
+    'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.':
+      'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.',
+    'Go to Home': 'Go to Home',
+    'Contact Sales': 'Contact Sales',
+    'Please fill out the form below to contact our sales team.':
+      'Please fill out the form below to contact our sales team.',
+    Name: 'Name',
+    'Company Name': 'Company Name',
+    Message: 'Message',
+    Submit: 'Submit',
+    'Please enter your name.': 'Please enter your name.',
+    'Please enter your company.': 'Please enter your company.',
+    'Please enter a message.': 'Please enter a message.',
   },
 }
