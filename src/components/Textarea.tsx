@@ -1,6 +1,5 @@
 import clsx from 'clsx'
 import type { ChangeEvent } from 'react'
-import { useTranslation } from 'react-i18next'
 
 interface TextareaProps {
   id?: string
@@ -23,7 +22,6 @@ export const Textarea = ({
   className,
   errorMessage,
 }: TextareaProps) => {
-  const { t } = useTranslation()
   return (
     <>
       <textarea
@@ -47,7 +45,7 @@ export const Textarea = ({
         required={required}
       />
       {errorMessage && (
-        <span className={'text-xs text-error'}>{t(errorMessage)}</span>
+        <span className={'text-xs text-error'}>{errorMessage}</span>
       )}
     </>
   )

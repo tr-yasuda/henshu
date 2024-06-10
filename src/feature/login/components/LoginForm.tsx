@@ -92,7 +92,7 @@ export const LoginForm = () => {
                       type={formField.inputType}
                       value={field.state.value}
                       onChange={(e) => field.handleChange(e.target.value)}
-                      errorMessage={field.state.meta.errors.toString()}
+                      errorMessage={t(field.state.meta.errors.toString())}
                       required
                     />
                   </>
