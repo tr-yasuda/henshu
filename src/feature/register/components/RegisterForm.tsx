@@ -103,7 +103,7 @@ export const RegisterForm = () => {
                     value={field.state.value}
                     onChange={(e) => field.handleChange(e.target.value)}
                     required
-                    errorMessage={field.state.meta.errors.toString()}
+                    errorMessage={t(field.state.meta.errors.toString())}
                   />
                 </div>
               )}

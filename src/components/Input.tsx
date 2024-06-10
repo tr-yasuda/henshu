@@ -1,6 +1,5 @@
 import clsx from 'clsx'
 import type { ChangeEvent } from 'react'
-import { useTranslation } from 'react-i18next'
 
 type InputProps = {
   id?: string
@@ -21,7 +20,6 @@ export const Input = ({
   errorMessage = '',
   ...rest
 }: InputProps) => {
-  const { t } = useTranslation()
   return (
     <>
       <input
@@ -43,7 +41,7 @@ export const Input = ({
         required
       />
       {errorMessage && (
-        <span className={'text-xs text-error'}>{t(errorMessage)}</span>
+        <span className={'text-xs text-error'}>{errorMessage}</span>
       )}
     </>
   )

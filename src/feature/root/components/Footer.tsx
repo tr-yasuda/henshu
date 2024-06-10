@@ -1,8 +1,7 @@
 import {
   IconBrandFacebook,
   IconBrandGithub,
-  IconBrandInstagram,
-  IconBrandX,
+  IconBrandLinkedin,
 } from '@tabler/icons-react'
 import { Link } from '@tanstack/react-router'
 import { type ChangeEvent, type ReactNode, useState } from 'react'
@@ -23,9 +22,16 @@ const supportLinks = [
 ]
 
 const socialLinks = [
-  { href: '#', text: 'Facebook', Icon: IconBrandFacebook },
-  { href: '#', text: 'X', Icon: IconBrandX },
-  { href: '#', text: 'Instagram', Icon: IconBrandInstagram },
+  {
+    href: 'https://www.facebook.com/yoshitada.yasuda.1997/',
+    text: 'Facebook',
+    Icon: IconBrandFacebook,
+  },
+  {
+    href: 'https://www.linkedin.com/in/13931023b',
+    text: 'LinkedIn',
+    Icon: IconBrandLinkedin,
+  },
   {
     href: 'https://github.com/tr-yasuda/henshu',
     text: 'GitHub',
@@ -134,7 +140,7 @@ export const Footer = () => {
         </div>
         <div className='text-center mt-4'>
           <p className='text-gray-400'>
-            &copy; 2024 tr-yasuda. {t('All rights reserved.')}
+            &copy; 2024 Yoshitada Yasuda. {t('All rights reserved.')}
           </p>
         </div>
       </div>
