@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 import { TanStackRouterVite } from '@tanstack/router-vite-plugin'
 import react from '@vitejs/plugin-react'
 import tailwindcss from 'tailwindcss'
@@ -12,10 +11,6 @@ export default defineConfig({
     postcss: {
       plugins: [tailwindcss()],
     },
-  },
-  test: {
-    environment: 'happy-dom',
-    setupFiles: ['src/vitest-setup.ts'],
   },
   base: '/henshu/',
   build: {

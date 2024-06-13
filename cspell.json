@@ -8,5 +8,5 @@
     }
   ],
   "dictionaries": ["project-words"],
-  "ignorePaths": ["node_modules", "/project-words.txt"]
+  "ignorePaths": ["dist", "node_modules", "build", "out", "project-words.txt"]
 }

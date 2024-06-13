@@ -1,0 +1,26 @@
+{
+  "name": "henshu-server",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev src/dev.ts",
+    "build": "esbuild --bundle --outfile=./dist/index.js --platform=node --target=node20 ./src/index.ts",
+    "zip": "zip -j lambda.zip dist/index.js",
+    "update": "aws lambda update-function-code --zip-file fileb://lambda.zip --function-name hello",
+    "deploy": "run-s build zip update",
+    "lint": "biome lint ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.0",
+    "@types/node": "^20.14.2",
+    "esbuild": "^0.21.4",
+    "npm-run-all2": "^6.2.0",
+    "prisma": "^5.15.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0",
+    "wrangler": "^3.53.0"
+  },
+  "dependencies": {
+    "hono": "^4.4.5"
+  }
+}
