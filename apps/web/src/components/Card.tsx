@@ -19,7 +19,7 @@ type CardProps = {
 
 export const Card = ({
   children,
-  color = 'primary',
+  color = 'white',
   border,
   fullWidth,
   className,

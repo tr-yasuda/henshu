@@ -1,5 +1,6 @@
 export const ja: { translation: Record<string, string> } = {
   translation: {
+    '': '',
     'Create Amazing Videos': 'めっちゃスゴい動画を',
     Effortlessly: '作ろう！',
     'Edit your videos with our intuitive and powerful tools. No experience required.':
@@ -93,6 +94,8 @@ export const ja: { translation: Record<string, string> } = {
     'Please enter your email address.': 'メールアドレスを入力してください。',
     'Password must be at least 12 characters.':
       'パスワードは 12 文字以上である必要があります。',
+    'Password must be at most 128 characters.':
+      'パスワードは 128 文字以下である必要があります。',
     'Create your account by filling out the information below.':
       '以下の情報を入力してアカウントを作成してください。',
     Username: 'ユーザー名',
@@ -112,5 +115,25 @@ export const ja: { translation: Record<string, string> } = {
     'Please enter your name.': 'お名前を入力してください。',
     'Please enter your company.': '会社名を入力してください。',
     'Please enter a message.': 'ご用件を入力してください。',
+    Home: 'ホーム',
+    Projects: 'プロジェクト',
+    'Search ...': '検索 ...',
+    Search: '検索',
+    'Drop the video files here...': 'ここにビデオファイルをドロップ...',
+    'Drag & drop some video files here, or click to select files':
+      'ここにビデオファイルをドラッグ＆ドロップするか、クリックしてファイルを選択してください',
+    'Create Project': 'プロジェクトを作成',
+    'Project Title': 'プロジェクトタイトル',
+    Description: '説明',
+    'Video file:': 'ビデオファイル:',
+    Cancel: 'キャンセル',
+    Create: '作成',
+    'Please enter a title.': 'タイトルを入力してください。',
+    'Title must be less than 64 characters.':
+      'タイトルは 64 文字以下である必要があります。',
+    'Please enter a description.': '説明を入力してください。',
+    'Description must be less than 256 characters.':
+      '説明は 256 文字以下である必要があります。',
+    Edit: '編集',
   },
 }

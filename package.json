@@ -1,52 +1,22 @@
 {
   "name": "henshu",
-  "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "workspaces": ["apps/*", "packages/*"],
   "scripts": {
-    "dev": "vite --mode development",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "test": "vitest",
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "preview": "turbo preview",
+    "test": "turbo test",
+    "check-types": "turbo check-types",
     "biome:lint": "biome lint .",
     "biome:format": "biome format .",
     "biome:check": "biome check .",
     "cspell:lint": "cspell lint ."
   },
-  "dependencies": {
-    "@tabler/icons-react": "^3.5.0",
-    "@tanstack/react-form": "^0.20.3",
-    "@tanstack/react-query": "^5.40.1",
-    "@tanstack/react-query-devtools": "^5.40.1",
-    "@tanstack/react-router": "^1.35.1",
-    "@tanstack/zod-form-adapter": "^0.20.3",
-    "clsx": "^2.1.1",
-    "i18next": "^23.11.5",
-    "i18next-browser-languagedetector": "^8.0.0",
-    "i18next-http-backend": "^2.5.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-i18next": "^14.1.2",
-    "zod": "^3.23.8"
-  },
   "devDependencies": {
+    "turbo": "^2.0.3",
     "@biomejs/biome": "1.8.0",
-    "@tanstack/router-devtools": "^1.35.3",
-    "@tanstack/router-vite-plugin": "^1.34.8",
-    "@types/node": "^20.14.2",
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.0",
-    "autoprefixer": "^10.4.19",
-    "cspell": "^8.8.4",
-    "happy-dom": "^14.12.0",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.12",
-    "vite-plugin-biome": "1.0.10",
-    "vitest": "^1.6.0",
-    "nx": "19.2.2"
+    "cspell": "^8.8.4"
   },
-  "nx": {}
+  "packageManager": "npm@10.8.1"
 }
