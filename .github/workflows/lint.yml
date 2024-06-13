@@ -17,8 +17,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run Biome lint
-        run: npm run biome:lint
+      - name: Run turbo lint
+        run: npm run lint
 
       - name: Run cspell lint
         run: npm run cspell:lint
