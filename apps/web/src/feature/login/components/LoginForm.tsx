@@ -20,7 +20,8 @@ export const LoginForm = () => {
         email: z.string().email('Please enter your email address.'),
         password: z
           .string()
-          .min(12, 'Password must be at least 12 characters.'),
+          .min(12, 'Password must be at least 12 characters.')
+          .max(128, 'Password must be at most 128 characters.'),
       }),
     },
     validatorAdapter: zodValidator,
@@ -40,13 +41,13 @@ export const LoginForm = () => {
       name: 'email',
       label: 'Email',
       inputType: 'email',
-      validator: z.string().email('Please enter your email address.'),
+      validator: z.string().email(),
     },
     {
       name: 'password',
       label: 'Password',
       inputType: 'password',
-      validator: z.string().min(12, 'Password must be at least 12 characters.'),
+      validator: z.string().min(12).max(128),
     },
   ]
 

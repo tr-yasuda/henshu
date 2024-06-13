@@ -10,15 +10,15 @@ import { MenuItem } from '../../../components/MenuItem.tsx'
 import { Select } from '../../../components/Select.tsx'
 
 const companyLinks = [
-  { href: '#', text: 'About Us' },
-  { href: '#', text: 'Careers' },
-  { href: '/', text: 'Press' },
+  { to: '#', text: 'About Us' },
+  { to: '#', text: 'Careers' },
+  { to: '/', text: 'Press' },
 ]
 
 const supportLinks = [
-  { href: '#', text: 'Help Center' },
-  { href: '/', text: 'Contact Us' },
-  { href: '#', text: 'Privacy Policy' },
+  { to: '#', text: 'Help Center' },
+  { to: '/contact-sales', text: 'Contact Us' },
+  { to: '#', text: 'Privacy Policy' },
 ]
 
 const socialLinks = [
@@ -40,13 +40,13 @@ const socialLinks = [
 ]
 
 type FooterLinkProps = {
-  href: string
+  to: string
   children: ReactNode
 }
 
-export const FooterLink = ({ href, children }: FooterLinkProps) => (
+export const FooterLink = ({ to, children }: FooterLinkProps) => (
   <li className='mb-2'>
-    <Link href={href} className='text-gray-400 hover:text-white'>
+    <Link to={to} className='text-gray-400 hover:text-white'>
       {children}
     </Link>
   </li>
@@ -81,14 +81,14 @@ export const Footer = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
           <FooterSection title={t('Company')}>
             {companyLinks.map((link) => (
-              <FooterLink key={link.text} href={link.href}>
+              <FooterLink key={link.text} to={link.to}>
                 {t(link.text)}
               </FooterLink>
             ))}
           </FooterSection>
           <FooterSection title={t('Support')}>
             {supportLinks.map((link) => (
-              <FooterLink key={link.text} href={link.href}>
+              <FooterLink key={link.text} to={link.to}>
                 {t(link.text)}
               </FooterLink>
             ))}

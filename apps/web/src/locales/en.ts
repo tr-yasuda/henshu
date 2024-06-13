@@ -1,5 +1,6 @@
 export const en: { translation: Record<string, string> } = {
   translation: {
+    '': '',
     'Create Amazing Videos': 'Create Amazing Videos',
     Effortlessly: 'Effortlessly',
     'Edit your videos with our intuitive and powerful tools. No experience required.':
@@ -94,6 +95,8 @@ export const en: { translation: Record<string, string> } = {
     'Please enter your email address.': 'Please enter your email address.',
     'Password must be at least 12 characters.':
       'Password must be at least 12 characters.',
+    'Password must be at most 128 characters.':
+      'Password must be at most 128 characters.',
     'Create your account by filling out the information below.':
       'Create your account by filling out the information below.',
     Username: 'Username',
@@ -113,5 +116,25 @@ export const en: { translation: Record<string, string> } = {
     'Please enter your name.': 'Please enter your name.',
     'Please enter your company.': 'Please enter your company.',
     'Please enter a message.': 'Please enter a message.',
+    Home: 'Home',
+    Projects: 'Projects',
+    'Search ...': 'Search ...',
+    Search: 'Search',
+    'Drop the video files here...': 'Drop the video files here...',
+    'Drag & drop some video files here, or click to select files':
+      'Drag & drop some video files here, or click to select files',
+    'Create Project': 'Create Project',
+    'Project Title': 'Project Title',
+    Description: 'Description',
+    'Video file:': 'Video file:',
+    Cancel: 'Cancel',
+    Create: 'Create',
+    'Please enter a title.': 'Please enter a title.',
+    'Title must be less than 64 characters.':
+      'Title must be less than 64 characters.',
+    'Please enter a description.': 'Please enter a description.',
+    'Description must be less than 256 characters.':
+      'Description must be less than 256 characters.',
+    Edit: 'Edit',
   },
 }

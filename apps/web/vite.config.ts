@@ -7,7 +7,7 @@ import biomePlugin from 'vite-plugin-biome'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), biomePlugin(), TanStackRouterVite()],
+  plugins: [react(), TanStackRouterVite(), biomePlugin()],
   css: {
     postcss: {
       plugins: [tailwindcss()],
@@ -18,4 +18,19 @@ export default defineConfig({
     setupFiles: ['src/vitest-setup.ts'],
   },
   base: '/henshu/',
+  build: {
+    rollupOptions: {
+      plugins: [
+        {
+          name: 'replace-code',
+          transform(code, id) {
+            return code.replace(
+              /\.then\(\(d\) => d\.Route\)/g,
+              '.then((d) => { return d.Route; })',
+            )
+          },
+        },
+      ],
+    },
+  },
 })
