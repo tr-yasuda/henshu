@@ -1,11 +1,11 @@
-import { useForm } from '@tanstack/react-form' // 背景画像のインポート
+import { Button } from '@/components/Button.tsx'
+import { Card } from '@/components/Card.tsx'
+import { Input } from '@/components/Input.tsx'
+import { Textarea } from '@/components/Textarea.tsx'
+import { useForm } from '@tanstack/react-form'
 import { zodValidator } from '@tanstack/zod-form-adapter'
 import { useTranslation } from 'react-i18next'
 import { z } from 'zod'
-import { Button } from '../../../components/Button.tsx'
-import { Card } from '../../../components/Card.tsx'
-import { Input } from '../../../components/Input.tsx'
-import { Textarea } from '../../../components/Textarea.tsx'
 import BackgroundImage from '../images/background.webp'
 
 const formFields: {

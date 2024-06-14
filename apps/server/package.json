@@ -5,7 +5,7 @@
     "dev": "wrangler dev src/dev.ts",
     "build": "esbuild --bundle --outfile=./dist/index.js --platform=node --target=node20 ./src/index.ts",
     "zip": "zip -j lambda.zip dist/index.js",
-    "update": "aws lambda update-function-code --zip-file fileb://lambda.zip --function-name hello",
+    "update": "aws lambda update-function-code --zip-file fileb://lambda.zip --function-name henshu-server",
     "deploy": "run-s build zip update",
     "lint": "biome lint ."
   },

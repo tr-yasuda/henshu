@@ -1,12 +1,12 @@
+import { Card } from '@/components/Card.tsx'
+import { IconButton } from '@/components/IconButton.tsx'
+import { SearchInput } from '@/components/SearchInput.tsx'
 import { IconSearch } from '@tabler/icons-react'
 import { Link } from '@tanstack/react-router'
 import clsx from 'clsx'
 import { useState } from 'react'
 import { useDropzone } from 'react-dropzone'
 import { useTranslation } from 'react-i18next'
-import { Card } from '../../../components/Card.tsx'
-import { IconButton } from '../../../components/IconButton.tsx'
-import { SearchInput } from '../../../components/SearchInput.tsx'
 import { CreateProjectModal } from './CreateProjectModal.tsx'
 
 // TODO: Replace with real data

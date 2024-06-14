@@ -1,6 +1,6 @@
+import { Breadcrumbs } from '@/components/Breadcrumbs.tsx'
 import { Link } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
-import { Breadcrumbs } from '../../../components/Breadcrumbs.tsx'
 
 const list = [
   { to: '/', label: 'Home' },
