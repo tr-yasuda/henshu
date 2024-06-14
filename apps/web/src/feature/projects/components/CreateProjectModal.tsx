@@ -1,12 +1,12 @@
+import { Button } from '@/components/Button.tsx'
+import { Input } from '@/components/Input.tsx'
+import { Modal } from '@/components/Modal.tsx'
+import { Textarea } from '@/components/Textarea.tsx'
 import { useForm } from '@tanstack/react-form'
 import { zodValidator } from '@tanstack/zod-form-adapter'
 import { useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { z } from 'zod'
-import { Button } from '../../../components/Button.tsx'
-import { Input } from '../../../components/Input.tsx'
-import { Modal } from '../../../components/Modal.tsx'
-import { Textarea } from '../../../components/Textarea.tsx'
 
 type CreateProjectModalProps = {
   isOpen: boolean

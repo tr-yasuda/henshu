@@ -1,7 +1,7 @@
+import { Button } from '@/components/Button.tsx'
+import { Card } from '@/components/Card.tsx'
 import { Link } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
-import { Button } from '../../../components/Button.tsx' // 背景画像のインポート
-import { Card } from '../../../components/Card.tsx'
 import BackgroundImage from '../images/not-found-error.webp'
 
 export const NotFoundError = () => {
