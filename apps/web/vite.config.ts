@@ -1,3 +1,4 @@
+import path from 'node:path'
 import { TanStackRouterVite } from '@tanstack/router-vite-plugin'
 import react from '@vitejs/plugin-react'
 import tailwindcss from 'tailwindcss'
@@ -13,6 +14,11 @@ export default defineConfig({
     },
   },
   base: '/henshu/',
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
   build: {
     rollupOptions: {
       plugins: [
