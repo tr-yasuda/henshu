@@ -11,7 +11,7 @@
     "lint": "biome lint ."
   },
   "dependencies": {
-    "@tabler/icons-react": "^3.5.0",
+    "@tabler/icons-react": "^3.7.0",
     "@tanstack/react-form": "^0.20.3",
     "@tanstack/react-query": "^5.40.1",
     "@tanstack/react-query-devtools": "^5.40.1",
