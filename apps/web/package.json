@@ -14,7 +14,7 @@
     "@tabler/icons-react": "^3.5.0",
     "@tanstack/react-form": "^0.20.3",
     "@tanstack/react-query": "^5.40.1",
-    "@tanstack/react-query-devtools": "^5.40.1",
+    "@tanstack/react-query-devtools": "^5.49.2",
     "@tanstack/react-router": "^1.35.1",
     "@tanstack/zod-form-adapter": "^0.20.3",
     "clsx": "^2.1.1",
